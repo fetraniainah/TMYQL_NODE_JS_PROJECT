@@ -3,6 +3,7 @@ const path = require('path')
 const bodyParser = require('body-parser')
 const app = express()
 const mysql = require('mysql2');
+const server = require('http').Server(app)
 
 app.set('views',path.join(__dirname,'templates'))
 app.set('view engine', 'twig')
